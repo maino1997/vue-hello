@@ -12,9 +12,14 @@ var app = new Vue({
     data: {
         message: 'Hello World',
         image: {
-            src: 'https://picsphotos/id/237/200/300',
+            src: 'https://picsum.photos/id/237/200/300',
             alt: 'Lorem Picsum Image'
         }
     }
 });
+
+
+
+
+
 
