@@ -12,9 +12,9 @@
 
 <body>
     <div id='root'>
-        <h1 v-bind:class='classe'>{{message}}</h1>
-        <button v-on:click="changeClass">Cambia colore testo</button>
-        <img v-bind:src='image.src' v-bind:alt='image.alt'>
+        <h1 :class='classe'>{{message}}</h1>
+        <button @click="changeClass">Cambia colore testo</button>
+        <img :src='image.src' :alt='image.alt'>
     </div>
 
     <script src="script.js"></script>
