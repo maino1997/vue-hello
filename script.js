@@ -11,10 +11,24 @@ var app = new Vue({
     el: '#root',
     data: {
         message: 'Hello World',
+        classe: 'text-green',
         image: {
             src: 'https://picsum.photos/id/237/200/300',
-            alt: 'Lorem Picsum Image'
+            alt: 'Lorem Picsum Image',
+        },
+    },
+    methods: {
+        changeClass() {
+            console.log('ciao');
+            console.log(this.classe);
+            if (this.classe === 'text-green') {
+                this.classe = 'text-red';
+                console.log(this.classe);
+            } else {
+                this.classe = 'text-green'
+            }
         }
+
     }
 });
 
